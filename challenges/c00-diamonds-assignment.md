@@ -97,9 +97,8 @@ document your observations.
 
 ``` r
 ## TASK: Plot `price` vs `carat` below
-ggplot(
-  data = diamonds
-) +
+diamonds |>
+  ggplot() +
   geom_point(
     mapping = aes(
       x = carat,
@@ -127,9 +126,8 @@ ggplot(
 
 ``` r
 ## TASK: Plot `price`, `carat`, and `cut` below
-ggplot(
-  data = diamonds
-) +
+diamonds |>
+  ggplot() +
   geom_point(
     mapping = aes(
       x = carat,
